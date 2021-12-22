@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" page-range-format="minimal" demote-non-dropping-particle="never" default-locale="en-GB">
   <!-- This style was edited with the Visual CSL Editor (https://editor.citationstyles.org/visualEditor/) -->
   <info>
@@ -10,7 +10,7 @@
     <category citation-format="author-date"/>
     <category field="social_science"/>
     <summary>Style for Intellect Newgen Style</summary>
-    <updated>2020-08-19T09:16:06+00:00</updated>
+    <updated>2021-11-15T07:08:32+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="conditionalusetitle">
@@ -33,9 +33,6 @@
       <else-if variable="issued">
         <choose>
           <if type="chapter" match="any">
-            <date form="text" variable="issued" prefix="[" suffix="] ">
-              <date-part name="year"/>
-            </date>
             <date date-parts="year" form="text" variable="issued">
               <date-part name="year"/>
             </date>
@@ -443,7 +440,7 @@
         </choose>
       </if>
       <else-if type="graphic pamphlet" match="any">
-        <group delimiter="&#8211;">
+        <group delimiter="–">
           <date delimiter="" variable="issued">
             <date-part name="day" suffix=" "/>
             <date-part name="month"/>
@@ -463,7 +460,7 @@
         </group>
       </else-if>
       <else-if type="paper-conference" match="any">
-        <group delimiter="&#8211;">
+        <group delimiter="–">
           <date delimiter="" variable="issued">
             <date-part name="day"/>
           </date>
